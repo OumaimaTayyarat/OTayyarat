@@ -1,6 +1,5 @@
 node_modules
 .vercel
-dist/
 .parcel-cache/
 public/sounds/*.mp3
 public/textures/*.png
