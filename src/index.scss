@@ -16,10 +16,8 @@
   --color-Avatar-light: #d68ddc;
 }
 
-
-
 .OumaPortfolio-helper {
-  display: none; 
+  display: none;
 }
 
 html,
@@ -37,12 +35,12 @@ body,
 body {
   font-size: clamp(18px, 3.5vmin, 26px);
   line-height: 110%;
-  
+
   // Responsive font sizes
   @media (max-width: 768px) {
     font-size: clamp(16px, 4vw, 20px);
   }
-  
+
   @media (max-width: 480px) {
     font-size: clamp(14px, 4vw, 18px);
   }
@@ -51,7 +49,7 @@ body {
 .app {
   background-color: var(--color-black);
   color: #f9f9f9;
- 
+
   h1,
   h2,
   h3,
@@ -65,15 +63,15 @@ body {
 
   h1 {
     font-size: clamp(30px, 10vmin, 130px);
-    
+
     @media (max-width: 1024px) {
       font-size: clamp(28px, 8vmin, 80px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: clamp(24px, 7vmin, 60px);
     }
-    
+
     @media (max-width: 480px) {
       font-size: clamp(20px, 6vmin, 45px);
     }
@@ -81,15 +79,15 @@ body {
 
   h2 {
     font-size: clamp(30px, 11vmin, 100px);
-    
+
     @media (max-width: 1024px) {
       font-size: clamp(26px, 8vmin, 70px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: clamp(22px, 6vmin, 50px);
     }
-    
+
     @media (max-width: 480px) {
       font-size: clamp(18px, 5vmin, 35px);
     }
@@ -97,15 +95,15 @@ body {
 
   h3 {
     font-size: clamp(24px, 6.5vmin, 60px);
-    
+
     @media (max-width: 1024px) {
       font-size: clamp(22px, 5.5vmin, 45px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: clamp(20px, 5vmin, 35px);
     }
-    
+
     @media (max-width: 480px) {
       font-size: clamp(16px, 4vmin, 28px);
     }
@@ -113,15 +111,15 @@ body {
 
   h4 {
     font-size: clamp(20px, 4vmin, 40px);
-    
+
     @media (max-width: 1024px) {
       font-size: clamp(18px, 3.5vmin, 30px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: clamp(16px, 3vmin, 24px);
     }
-    
+
     @media (max-width: 480px) {
       font-size: clamp(14px, 2.5vmin, 20px);
     }
@@ -129,15 +127,15 @@ body {
 
   h8 {
     font-size: clamp(18px, 3.5vmin, 32px);
-    
+
     @media (max-width: 1024px) {
       font-size: clamp(16px, 3vmin, 24px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: clamp(14px, 2.5vmin, 20px);
     }
-    
+
     @media (max-width: 480px) {
       font-size: clamp(12px, 2vmin, 16px);
     }
@@ -182,7 +180,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    
+
     @media (max-width: 480px) {
       gap: 0.3em;
     }
@@ -190,11 +188,11 @@ body {
 
   .left {
     gap: 1em;
-    
+
     @media (max-width: 768px) {
       gap: 0.7em;
     }
-    
+
     @media (max-width: 480px) {
       gap: 0.5em;
     }
@@ -238,7 +236,7 @@ body {
 
     svg {
       transition: transform 0.2s ease-in-out;
-      
+
       @media (max-width: 480px) {
         transform: scale(0.8);
       }
@@ -251,7 +249,7 @@ body {
     &[data-off] {
       svg {
         transform: scale(0.8);
-        
+
         @media (max-width: 480px) {
           transform: scale(0.6);
         }
@@ -266,7 +264,7 @@ body {
         left: 50%;
         background-color: var(--border-color);
         transform: translate(-50%, -50%) rotate(-45deg);
-        
+
         @media (max-width: 480px) {
           height: 1.5px;
         }
@@ -309,8 +307,10 @@ body {
     inset: 5px;
     background-color: var(--color-Avatar);
     transform-origin: left center;
-    transform: scaleX(calc(8000000000000000000000000000000000000 * var(--health)));
-    
+    transform: scaleX(
+      calc(8000000000000000000000000000000000000 * var(--health))
+    );
+
     @media (max-width: 480px) {
       inset: 3px;
     }
@@ -366,134 +366,134 @@ body {
   }
 
   // MASQUER LES PORTFOLIOS SUR LES APPAREILS MOYENS ET PETITS
-//   .OumaPortfolios {
-//     inset: unset;
-//     bottom: 3vmin;
-//     right: 3vmin;
-//     z-index: 10;
-//     max-width: 50%;
+  //   .OumaPortfolios {
+  //     inset: unset;
+  //     bottom: 3vmin;
+  //     right: 3vmin;
+  //     z-index: 10;
+  //     max-width: 50%;
 
-//     display: none;
+  //     display: none;
 
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr;
+  //     grid-template-columns: 1fr 1fr 1fr;
+  //     grid-template-rows: 1fr;
 
-//     gap: 1.5rem;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 0.5rem 1.5rem;
+  //     gap: 1.5rem;
+  //     justify-content: center;
+  //     align-items: center;
+  //     padding: 0.5rem 1.5rem;
 
-//     // MASQUER COMPLÈTEMENT SUR TABLETTES ET MOBILES
-//     // @media (max-width: 1024px) {
-//     //   display: none !important;
-//     //   visibility: hidden;
-//     // }
+  //     // MASQUER COMPLÈTEMENT SUR TABLETTES ET MOBILES
+  //     // @media (max-width: 1024px) {
+  //     //   display: none !important;
+  //     //   visibility: hidden;
+  //     // }
 
-//     // Styles uniquement pour les grands écrans (desktop)
-//     @media (min-width: 1025px) {
-//       .OumaPortfolio-path {
-//         width: 70px;
-//         position: relative;
+  //     // Styles uniquement pour les grands écrans (desktop)
+  //     @media (min-width: 1025px) {
+  //       .OumaPortfolio-path {
+  //         width: 70px;
+  //         position: relative;
 
-//         .check {
-//           display: none;
-//         }
+  //         .check {
+  //           display: none;
+  //         }
 
-//         svg {
-//           width: 60%;
-//           fill: none;
-//         }
-//       }
+  //         svg {
+  //           width: 60%;
+  //           fill: none;
+  //         }
+  //       }
 
-//       .info {
-//         display: none;
-//         flex-direction: column;
+  //       .info {
+  //         display: none;
+  //         flex-direction: column;
 
-//         h4 {
-//           margin-bottom: 0.2rem;
-//         }
+  //         h4 {
+  //           margin-bottom: 0.2rem;
+  //         }
 
-//         p {
-//           font-size: 15px;
-//           line-height: 1.2;
-//         }
-//       }
+  //         p {
+  //           font-size: 15px;
+  //           line-height: 1.2;
+  //         }
+  //       }
 
-//       .charge-path {
-//         stroke-width: 6;
-//         stroke-dasharray: var(--length) var(--length);
-//         stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));
-//       }
+  //       .charge-path {
+  //         stroke-width: 6;
+  //         stroke-dasharray: var(--length) var(--length);
+  //         stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));
+  //       }
 
-//       .guide-path {
-//         stroke: rgba(255, 255, 255, 0.2);
-//       }
+  //       .guide-path {
+  //         stroke: rgba(255, 255, 255, 0.2);
+  //       }
 
-//       .OumaPortfolio-details {
-//         display: flex;
-//         flex-direction: row;
-//         gap: 0.8rem;
-//         align-items: center;
-//         z-index: 2;
-//       }
+  //       .OumaPortfolio-details {
+  //         display: flex;
+  //         flex-direction: row;
+  //         gap: 0.8rem;
+  //         align-items: center;
+  //         z-index: 2;
+  //       }
 
-//       .background {
-//         position: absolute;
-//         inset: 0;
-//         border: solid 2px var(--color-grey);
-//         background-color: var(--color-black-alpha);
-//       }
-//   a {
-//  font-size: 16px;
-//   }
-//       &.corner {
-//         cursor: pointer;
-//         pointer-events: all;
-//         display: grid;
+  //       .background {
+  //         position: absolute;
+  //         inset: 0;
+  //         border: solid 2px var(--color-grey);
+  //         background-color: var(--color-black-alpha);
+  //       }
+  //   a {
+  //  font-size: 16px;
+  //   }
+  //       &.corner {
+  //         cursor: pointer;
+  //         pointer-events: all;
+  //         display: grid;
 
-//         .OumaPortfolio-path {
-//           &.ready {
-//             .check {
-//               opacity: 1;
-//               transform: translate(-50%, -200%);
-//             }
-//           }
-//         }
+  //         .OumaPortfolio-path {
+  //           &.ready {
+  //             .check {
+  //               opacity: 1;
+  //               transform: translate(-50%, -200%);
+  //             }
+  //           }
+  //         }
 
-//         &:hover {
-//           .background {
-//             border-color: var(--color-Avatar);
-//           }
-//         }
-//       }
+  //         &:hover {
+  //           .background {
+  //             border-color: var(--color-Avatar);
+  //           }
+  //         }
+  //       }
 
-//       &.full {
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         grid-template-rows: 1fr 1fr 1fr;
-//         bottom: 50%;
-//         gap: 2rem;
-//         transform: translateY(50%);
-//         padding: 2rem 3rem;
+  //       &.full {
+  //         display: grid;
+  //         grid-template-columns: 1fr;
+  //         grid-template-rows: 1fr 1fr 1fr;
+  //         bottom: 50%;
+  //         gap: 2rem;
+  //         transform: translateY(50%);
+  //         padding: 2rem 3rem;
 
-//         .OumaPortfolio-path {
-//           width: 160px;
+  //         .OumaPortfolio-path {
+  //           width: 160px;
 
-//           .check {
-//             transition: none;
-//           }
+  //           .check {
+  //             transition: none;
+  //           }
 
-//           svg {
-//             --charge: 1 !important;
-//           }
-//         }
+  //           svg {
+  //             --charge: 1 !important;
+  //           }
+  //         }
 
-//         .info {
-//           display: flex;
-//         }
-//       }
-//     }
-//   }
+  //         .info {
+  //           display: flex;
+  //         }
+  //       }
+  //     }
+  //   }
 
   .content {
     text-align: center;
@@ -505,11 +505,11 @@ body {
 
     > *:not(:last-child) {
       margin-bottom: clamp(20px, 5vmin, 50px);
-      
+
       @media (max-width: 768px) {
         margin-bottom: clamp(15px, 4vmin, 35px);
       }
-      
+
       @media (max-width: 480px) {
         margin-bottom: clamp(10px, 3vmin, 25px);
       }
@@ -525,15 +525,14 @@ body {
     flex-direction: column;
     line-height: 1.3;
 
-    .contenthh{
-          text-align: left;
-    grid-area: content;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 1.3;
-
+    .contenthh {
+      text-align: left;
+      grid-area: content;
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 1.3;
     }
 
     @media (max-width: 768px) {
@@ -548,11 +547,11 @@ body {
 
     > *:not(:last-child) {
       margin-bottom: clamp(20px, 5vmin, 50px);
-      
+
       @media (max-width: 768px) {
         margin-bottom: clamp(15px, 4vmin, 35px);
       }
-      
+
       @media (max-width: 480px) {
         margin-bottom: clamp(10px, 3vmin, 25px);
       }
@@ -566,13 +565,13 @@ body {
     display: flex;
     flex-direction: row;
     gap: 0.7em;
-    
+
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 0.5em;
       align-items: center;
     }
-    
+
     @media (max-width: 480px) {
       gap: 0.4em;
     }
@@ -592,17 +591,17 @@ body {
       border: 2px solid var(--border-color);
       font-size: 30px;
       padding: 0.2em 1.4em;
-      
+
       @media (max-width: 1024px) {
         font-size: 26px;
         padding: 0.3em 1.2em;
       }
-      
+
       @media (max-width: 768px) {
         font-size: 22px;
         padding: 0.4em 1em;
       }
-      
+
       @media (max-width: 480px) {
         font-size: 18px;
         padding: 0.5em 0.8em;
@@ -618,13 +617,13 @@ body {
       text-decoration-thickness: 2px;
       text-underline-offset: 5px;
       font-size: 20px;
-      
+
       @media (max-width: 768px) {
         font-size: 18px;
         text-decoration-thickness: 1.5px;
         text-underline-offset: 4px;
       }
-      
+
       @media (max-width: 480px) {
         font-size: 16px;
         text-decoration-thickness: 1px;
@@ -637,11 +636,11 @@ body {
       border: none;
       font-size: 18px;
       color: var(--color-grey);
-      
+
       @media (max-width: 768px) {
         font-size: 16px;
       }
-      
+
       @media (max-width: 480px) {
         font-size: 14px;
       }
@@ -659,11 +658,11 @@ body {
   p {
     max-width: 400px;
     margin: 0;
-    
+
     @media (max-width: 768px) {
       max-width: 90%;
     }
-    
+
     @media (max-width: 480px) {
       max-width: 95%;
     }
@@ -719,7 +718,7 @@ body {
     display: grid;
     grid-template-columns: 0px 1fr;
     grid-template-areas: "space content";
-    
+
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-template-areas: "content";
@@ -750,7 +749,7 @@ body {
 
     h1 {
       line-height: 1.2em;
-      
+
       @media (max-width: 480px) {
         line-height: 1.1em;
       }
@@ -773,49 +772,66 @@ body {
     .content {
       width: auto;
       text-align: left;
-      
+
       @media (max-width: 480px) {
-        text-align: center;
+        text-align: left;
       }
     }
 
     ul {
       @media (max-width: 480px) {
-        padding-left: 0;
-        list-style-position: inside;
+        list-style: none;
+        padding: 0;
+        margin-top: 2rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem !important;
       }
     }
-    
+
     li {
-      margin-bottom: 1rem;
-      
       @media (max-width: 480px) {
-        margin-bottom: 0.8rem;
+        margin: 0;
         font-size: 0.9em;
+        line-height: 1.4; /* Hauteur de ligne uniforme */
+      }
+    }
+
+    // Normalise les liens pour avoir la même hauteur
+    a {
+      @media (max-width: 480px) {
+        display: inline; // Reste en ligne
+        line-height: 1.4; // Même hauteur que le li
+        vertical-align: baseline; // Alignement cohérent
+        padding: 0;
+        margin: 0;
       }
     }
   }
 }
-[data-state="INSTRUCTIONS_OumaPortfolioS"] [data-screen="INSTRUCTIONS_OumaPortfolioS"] .content {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center ;  /* centre horizontalement */
-    margin: 0 auto;       /* pour bien centrer */
-    max-width: 90%;       /* évite que ça déborde sur petits écrans */
+[data-state="INSTRUCTIONS_OumaPortfolioS"]
+  [data-screen="INSTRUCTIONS_OumaPortfolioS"]
+  .content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center; /* centre horizontalement */
+  margin: 0 auto; /* pour bien centrer */
+  max-width: 90%; /* évite que ça déborde sur petits écrans */
 }
-
 
 // [data-state="INSTRUCTIONS_Avatar"] {
 //   [data-screen="INSTRUCTIONS_Avatar"] {
 //     display: grid;
 //     grid-template-rows: 1fr 1.2fr;
 //     grid-template-areas: "space" "content";
-    
+
 //     @media (max-width: 768px) {
 //       grid-template-rows: 0.5fr 1fr;
 //     }
-    
+
 //     @media (max-width: 480px) {
 //       grid-template-rows: 1fr;
 //       grid-template-areas: "content";
@@ -836,15 +852,15 @@ body {
 
 //     .content1 {
 //       justify-content: flex-start;
-      
+
 //       @media (max-width: 768px) {
 //         justify-content: center;
 //       }
 //     }
-    
+
 //     .content {
 //       justify-content: flex-end;
-      
+
 //       @media (max-width: 768px) {
 //         justify-content: center;
 //       }
@@ -857,7 +873,7 @@ body {
     display: grid;
     grid-template-columns: 0px 1fr;
     grid-template-areas: "space content";
-    
+
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-template-areas: "content";
@@ -885,8 +901,6 @@ body {
     opacity: 0.5;
   }
 }
-
-
 
 // Section Instructions - Responsive Grid avec Flèche Guide
 [data-state="INSTRUCTIONS_OumaPortfolioS"] {
@@ -944,16 +958,16 @@ body {
     // Responsive breakpoints - Tablettes
     @media (max-width: 1024px) {
       grid-template-columns: 1fr 1fr;
-      
+
       .content {
         // Garde la même disposition, pas de centrage
         padding: 1.5rem;
       }
-      
+
       .pause-guide-arrow {
         top: 15px;
         right: 60px;
-        
+
         svg {
           width: 28px;
           height: 28px;
@@ -963,24 +977,24 @@ body {
 
     // Tablettes en portrait et petits laptops
     @media (max-width: 820) {
-      grid-template-columns: 1fr 1.2fr; 
+      grid-template-columns: 1fr 1.2fr;
       // Garde encore la grill
-           position: absolute !important;
-    top: -20% !important;
-      
+      position: absolute !important;
+      top: -20% !important;
+
       .content {
         padding: 1.5rem;
         // PAS de text-align: center
-        
+
         button {
           // PAS de width: 100% ni centrage
           min-height: 44px;
         }
       }
-   .pause-guide-arrow {
+      .pause-guide-arrow {
         top: 10px;
         right: 50px;
-        
+
         svg {
           width: 24px;
           height: 24px;
@@ -988,9 +1002,9 @@ body {
       }
     }
 
-// Seulement sur très petits écrans
+    // Seulement sur très petits écrans
     @media (max-width: 480px) {
-      grid-template-columns: 0.0fr 2fr; // Garde la grille
+      grid-template-columns: 0fr 2fr; // Garde la grille
       position: absolute !important;
       top: -50% !important;
 
@@ -1010,16 +1024,15 @@ body {
         // Centrer le bouton
         button {
           margin: 0 auto;
-      
+
           align-self: flex-start !important;
-      
         }
       }
 
       .pause-guide-arrow {
         top: 8px;
         right: 40px;
-        
+
         svg {
           width: 20px;
           height: 20px;
@@ -1050,10 +1063,10 @@ body {
   [data-state="INSTRUCTIONS_OumaPortfolioS"] {
     [data-screen="INSTRUCTIONS_OumaPortfolioS"] {
       grid-template-rows: 1fr;
-      
+
       .content {
         padding: 1rem;
-        
+
         p {
           margin-bottom: 1rem;
           font-size: 1rem;
@@ -1063,7 +1076,7 @@ body {
       .pause-guide-arrow {
         top: 5px;
         right: 35px;
-        
+
         svg {
           width: 18px;
           height: 18px;
@@ -1136,7 +1149,7 @@ body {
 
     .content {
       justify-content: flex-end;
-      
+
       @media (max-width: 768px) {
         justify-content: center;
       }
@@ -1165,15 +1178,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "content space";
-    
+
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-template-areas: "content";
     }
-    
-// Seulement sur très petits écrans
+
+    // Seulement sur très petits écrans
     @media (max-width: 480px) {
-      grid-template-columns: 0.0fr 2fr; // Garde la grille
+      grid-template-columns: 0fr 2fr; // Garde la grille
       position: absolute !important;
       top: 0% !important;
 
@@ -1185,17 +1198,13 @@ body {
         padding: 0.2rem;
         text-align: center;
 
- 
         // Centrer le bouton
         button {
           margin: 0 auto;
-      
+
           align-self: flex-start !important;
-      
         }
       }
-
-    
     }
   }
 }
@@ -1223,7 +1232,7 @@ body {
 
     .content {
       justify-content: flex-end;
-      
+
       @media (max-width: 768px) {
         justify-content: center;
       }
@@ -1244,7 +1253,7 @@ body {
 
     .content {
       justify-content: flex-end;
-      
+
       @media (max-width: 768px) {
         justify-content: center;
       }
@@ -1257,7 +1266,7 @@ body {
   color: #d54adf;
   font-weight: bold;
   margin-right: 12px;
-  
+
   @media (max-width: 480px) {
     margin-right: 8px;
     display: block;
@@ -1266,8 +1275,8 @@ body {
 }
 
 .charging-notification {
-  display: none; 
-  
+  display: none;
+
   p {
     padding: 0;
     margin: 0;
@@ -1291,7 +1300,7 @@ body {
   gap: 10px;
   z-index: 100;
   pointer-events: none;
-  
+
   @media (max-width: 768px) {
     padding: 5px;
     gap: 5px;
@@ -1329,7 +1338,7 @@ body {
     padding: 6px 10px;
     cursor: pointer;
     pointer-events: all;
-    
+
     @media (max-width: 480px) {
       font-size: 0.8em;
       padding: 4px 6px;
@@ -1367,7 +1376,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
-  
+
   @media (max-width: 480px) {
     gap: 8px;
   }
@@ -1394,7 +1403,7 @@ body {
 
   &:not(:last-child) {
     padding-bottom: 1rem;
-    
+
     @media (max-width: 480px) {
       padding-bottom: 0.5rem;
     }
@@ -1405,11 +1414,11 @@ body {
     stroke-width: 2;
     fill: none;
     width: 60px;
-    
+
     @media (max-width: 768px) {
       width: 45px;
     }
-    
+
     @media (max-width: 480px) {
       width: 35px;
     }
@@ -1422,12 +1431,12 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline;
-    
+
     @media (max-width: 768px) {
       font-size: 1.2em;
       width: 100px;
     }
-    
+
     @media (max-width: 480px) {
       font-size: 1em;
       width: 80px;
@@ -1439,11 +1448,11 @@ body {
     align-items: center;
     gap: 2rem;
     flex-direction: row;
-    
+
     @media (max-width: 768px) {
       gap: 1.5rem;
     }
-    
+
     @media (max-width: 480px) {
       gap: 1rem;
     }
@@ -1514,290 +1523,264 @@ body {
 //   }
 // }
 
-
-.clear-interface {   
-  .debug-panels,   
-  .debug-overlays,   
-  .audio-controls,   
-  .top-bar,   
-  .screens {     
-    display: none;   
-  } 
+.clear-interface {
+  .debug-panels,
+  .debug-overlays,
+  .audio-controls,
+  .top-bar,
+  .screens {
+    display: none;
+  }
 }
 
-.debug-layout {   
-  .top-bar {     
-    outline: solid 2px purple;   
-  }   
-  .screens {     
-    outline: solid 2px green;     
-    > * {       
-      &::after {         
-        display: grid;         
-        align-items: center;         
-        justify-content: center;         
-        content: "SPACE";         
-        background-color: #ff000055;         
-        outline: solid 2px red;       
-      }     
-    }   
-  }   
-  .content {     
-    background-color: #0000ff55;     
-    outline: solid 2px blue;   
-  } 
+.debug-layout {
+  .top-bar {
+    outline: solid 2px purple;
+  }
+  .screens {
+    outline: solid 2px green;
+    > * {
+      &::after {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        content: "SPACE";
+        background-color: #ff000055;
+        outline: solid 2px red;
+      }
+    }
+  }
+  .content {
+    background-color: #0000ff55;
+    outline: solid 2px blue;
+  }
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  // Ajustements pour les appareils en mode paysage avec peu de hauteur
+  .screens > * {
+    --pad: 2vmin;
+  }
+  .content,
+  .content1 {
+    > *:not(:last-child) {
+      margin-bottom: clamp(8px, 2vmin, 20px);
+    }
+  }
+}
 
-
-
-
-@media (orientation: landscape) and (max-height: 500px) {   
-  // Ajustements pour les appareils en mode paysage avec peu de hauteur   
-  .screens > * {     
-    --pad: 2vmin;   
-  }     
-  .content,   
-  .content1 {     
-    > *:not(:last-child) {       
-      margin-bottom: clamp(8px, 2vmin, 20px);     
-    }   
-  } 
-}  
-
-.OumaPortfolios {     
-  inset: unset;     
-  bottom: 3vmin;     
-  right: 3vmin;     
-  z-index: 10;     
-  max-width: 50%;      
-  display: none;      
-  grid-template-columns: 1fr 1fr 1fr;     
-  grid-template-rows: 1fr;      
-  gap: 1.5rem;     
-  justify-content: center;     
-  align-items: center;     
-  padding: 0.5rem 1.5rem;      
+.OumaPortfolios {
+  inset: unset;
+  bottom: 3vmin;
+  right: 3vmin;
+  z-index: 10;
+  max-width: 50%;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
 
   // Copie de min-width mais avec p caché et svg plus petit
   @media (max-width: 1025px) {
-
-
- 
     max-width: 40%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 0;
-      justify-content: center;     
-  align-items: center;  
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     .OumaPortfolio-path {
       width: 70px;
       position: relative;
-         display: flex;
+      display: flex;
       justify-content: center;
       align-items: center;
       .check {
         display: none;
-      }          
-      svg {           
-        width: 50%;           
-        fill: none;         
-      }       
-    }        
-    .info {         
-      display: none;         
-      flex-direction: column;    
-      width:100% !important;
+      }
+      svg {
+        width: 50%;
+        fill: none;
+      }
+    }
+    .info {
+      display: none;
+      flex-direction: column;
+      width: 100% !important;
 
-      h4 {           
-        margin-bottom: 0.2rem;         
-      }          
-      p {           
-        display: none !important;         
-      }       
-    }        
-    .charge-path {         
-      stroke-width: 6;         
-      stroke-dasharray: var(--length) var(--length);         
-      stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));       
-    }        
-    .guide-path {         
-      stroke: rgba(255, 255, 255, 0.2);       
-    }        
-    .OumaPortfolio-details {         
-      display: flex;         
-      flex-direction: row;         
-      gap: 0.8rem;         
-      align-items: center;         
-      z-index: 2;       
-    }        
-    .background {         
-      position: absolute;         
-      inset: 0;         
-      border: solid 2px var(--color-grey);         
-      background-color: var(--color-black-alpha);       
-    }   
-    a {  
-      font-size: 16px;   
-    }       
-    &.corner {         
-      cursor: pointer;         
-      pointer-events: all;         
-      display: grid;          
-      .OumaPortfolio-path {           
-        &.ready {             
-          .check {               
-            opacity: 1;               
-            transform: translate(-50%, -200%);             
-          }           
-        }         
-      }          
-      &:hover {           
-        .background {             
-          border-color: var(--color-Avatar);           
-        }         
-      }       
-    }        
-    &.full {         
-      display: grid;         
-      grid-template-columns: 1fr;         
-      grid-template-rows: 1fr 1fr 1fr;         
-      bottom: 50%;         
-      gap: 2rem;         
-      transform: translateY(50%);         
-      padding: 2rem 3rem;          
-      .OumaPortfolio-path {           
-        width: 160px;            
-        .check {             
-          transition: none;           
-        }            
-        svg {             
-          --charge: 1 !important;           
-        }         
-      }          
-      .info {           
-        display: flex;         
-      }       
-    }     
-  }   
+      h4 {
+        margin-bottom: 0.2rem;
+      }
+      p {
+        display: none !important;
+      }
+    }
+    .charge-path {
+      stroke-width: 6;
+      stroke-dasharray: var(--length) var(--length);
+      stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));
+    }
+    .guide-path {
+      stroke: rgba(255, 255, 255, 0.2);
+    }
+    .OumaPortfolio-details {
+      display: flex;
+      flex-direction: row;
+      gap: 0.8rem;
+      align-items: center;
+      z-index: 2;
+    }
+    .background {
+      position: absolute;
+      inset: 0;
+      border: solid 2px var(--color-grey);
+      background-color: var(--color-black-alpha);
+    }
+    a {
+      font-size: 16px;
+    }
+    &.corner {
+      cursor: pointer;
+      pointer-events: all;
+      display: grid;
+      .OumaPortfolio-path {
+        &.ready {
+          .check {
+            opacity: 1;
+            transform: translate(-50%, -200%);
+          }
+        }
+      }
+      &:hover {
+        .background {
+          border-color: var(--color-Avatar);
+        }
+      }
+    }
+    &.full {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      bottom: 50%;
+      gap: 2rem;
+      transform: translateY(50%);
+      padding: 2rem 3rem;
+      .OumaPortfolio-path {
+        width: 160px;
+        .check {
+          transition: none;
+        }
+        svg {
+          --charge: 1 !important;
+        }
+      }
+      .info {
+        display: flex;
+      }
+    }
+  }
 
-  // Styles uniquement pour les grands écrans (desktop)     
-  @media (min-width: 1025px) {       
-    .OumaPortfolio-path {         
-      width: 70px;         
-      position: relative;          
-      .check {           
-        display: none;         
-      }          
-      svg {           
-        width: 60%;           
-        fill: none;         
-      }       
-    }        
-    .info {         
-      display: none;         
-      flex-direction: column;          
-      h4 {           
-        margin-bottom: 0.2rem;         
-      }          
-      p {           
-        font-size: 15px;           
-        line-height: 1.2;         
-      }       
-    }        
-    .charge-path {         
-      stroke-width: 6;         
-      stroke-dasharray: var(--length) var(--length);         
-      stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));       
-    }        
-    .guide-path {         
-      stroke: rgba(255, 255, 255, 0.2);       
-    }        
-    .OumaPortfolio-details {         
-      display: flex;         
-      flex-direction: row;         
-      gap: 0.8rem;         
-      align-items: center;         
-      z-index: 2;       
-    }        
-    .background {         
-      position: absolute;         
-      inset: 0;         
-      border: solid 2px var(--color-grey);         
-      background-color: var(--color-black-alpha);       
-    }   
-    a {  
-      font-size: 16px;   
-    }       
-    &.corner {         
-      cursor: pointer;         
-      pointer-events: all;         
-      display: grid;          
-      .OumaPortfolio-path {           
-        &.ready {             
-          .check {               
-            opacity: 1;               
-            transform: translate(-50%, -200%);             
-          }           
-        }         
-      }          
-      &:hover {           
-        .background {             
-          border-color: var(--color-Avatar);           
-        }         
-      }       
-    }        
-    &.full {         
-      display: grid;         
-      grid-template-columns: 1fr;         
-      grid-template-rows: 1fr 1fr 1fr;         
-      bottom: 50%;         
-      gap: 2rem;         
-      transform: translateY(50%);         
-      padding: 2rem 3rem;          
-      .OumaPortfolio-path {           
-        width: 160px;            
-        .check {             
-          transition: none;           
-        }            
-        svg {             
-          --charge: 1 !important;           
-        }         
-      }          
-      .info {           
-        display: flex;         
-      }       
-    }     
-  }   
+  // Styles uniquement pour les grands écrans (desktop)
+  @media (min-width: 1025px) {
+    .OumaPortfolio-path {
+      width: 70px;
+      position: relative;
+      .check {
+        display: none;
+      }
+      svg {
+        width: 60%;
+        fill: none;
+      }
+    }
+    .info {
+      display: none;
+      flex-direction: column;
+      h4 {
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.2;
+      }
+    }
+    .charge-path {
+      stroke-width: 6;
+      stroke-dasharray: var(--length) var(--length);
+      stroke-dashoffset: calc(((1 - var(--charge))) * var(--length));
+    }
+    .guide-path {
+      stroke: rgba(255, 255, 255, 0.2);
+    }
+    .OumaPortfolio-details {
+      display: flex;
+      flex-direction: row;
+      gap: 0.8rem;
+      align-items: center;
+      z-index: 2;
+    }
+    .background {
+      position: absolute;
+      inset: 0;
+      border: solid 2px var(--color-grey);
+      background-color: var(--color-black-alpha);
+    }
+    a {
+      font-size: 16px;
+    }
+    &.corner {
+      cursor: pointer;
+      pointer-events: all;
+      display: grid;
+      .OumaPortfolio-path {
+        &.ready {
+          .check {
+            opacity: 1;
+            transform: translate(-50%, -200%);
+          }
+        }
+      }
+      &:hover {
+        .background {
+          border-color: var(--color-Avatar);
+        }
+      }
+    }
+    &.full {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      bottom: 50%;
+      gap: 2rem;
+      transform: translateY(50%);
+      padding: 2rem 3rem;
+      .OumaPortfolio-path {
+        width: 160px;
+        .check {
+          transition: none;
+        }
+        svg {
+          --charge: 1 !important;
+        }
+      }
+      .info {
+        display: flex;
+      }
+    }
+  }
 }
 
-#OumaPortfolios {   
-  width: 0;   
-  height: 0;   
-  overflow: hidden;   
-  position: absolute;   
-  top: 0;   
-  left: 0; 
+#OumaPortfolios {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Améliorations pour l'accessibilité et l'expérience utilisateur
 @media (max-width: 768px) {
@@ -1807,12 +1790,12 @@ body {
       display: none; // Supprime les sauts de ligne forcés sur mobile
     }
   }
-  
+
   // Améliore l'espacement des boutons
   .button-row {
     li {
       width: 100%;
-      
+
       button {
         width: 100%;
         min-width: 120px;
@@ -1826,13 +1809,13 @@ body {
   body {
     -webkit-text-size-adjust: 100%; // Empêche le zoom automatique sur iOS
   }
-  
+
   // Améliore la lisibilité des textes
   .content1 p {
     text-align: left;
     line-height: 1.6;
   }
-  
+
   // Optimise les liens
   a {
     min-height: 44px; // Taille minimale pour les éléments tactiles
@@ -1847,7 +1830,7 @@ body {
   .screens > * {
     --pad: 2vmin;
   }
-  
+
   .content,
   .content1 {
     > *:not(:last-child) {
@@ -1863,7 +1846,7 @@ body {
   .loading-bar {
     border-width: 1px;
   }
-  
+
   button:not(.simple, .no-style) {
     border-width: 1px;
   }
